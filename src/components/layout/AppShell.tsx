@@ -32,8 +32,8 @@ export default function AppShell({ children }: AppShellProps) {
       )}
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col overflow-hidden pb-16 md:pb-0">
-        <main className="flex-1 overflow-y-auto">
+      <div className="flex-1 flex flex-col overflow-hidden">
+        <main className="flex-1 overflow-y-auto pb-16 md:pb-0">
           <div className="p-4 md:p-6">
             {children}
           </div>
@@ -41,7 +41,7 @@ export default function AppShell({ children }: AppShellProps) {
       </div>
 
       {/* Bottom Navigation (Mobile) */}
-      <div className="md:hidden">
+      <div className="fixed bottom-0 left-0 right-0 md:hidden z-50">
         <BottomNav onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
       </div>
     </div>
