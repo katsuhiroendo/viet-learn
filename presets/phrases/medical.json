@@ -1,0 +1,9 @@
+{
+  "scene": "medical",
+  "sceneName": "医療・薬局",
+  "phrases": [
+    {"id": "m001", "vietnamese": "Tôi bị đau.", "pronunciation": "toi1 bi3 dau1", "japanese": ["痛いです。"], "exampleVi": "Tôi bị đau đầu.", "exampleJa": "頭が痛いです。", "level": 1},
+    {"id": "m002", "vietnamese": "Tôi cần thuốc.", "pronunciation": "toi1 can2 thuoc3", "japanese": ["薬が必要です。"], "exampleVi": "Tôi cần thuốc cảm lạnh.", "exampleJa": "風邪薬が必要です。", "level": 1},
+    {"id": "m003", "vietnamese": "Bác sĩ ở đâu?", "pronunciation": "bac3 si3 o1 dau5", "japanese": ["医者はどこですか？"], "exampleVi": "Bác sĩ ở đâu?", "exampleJa": "医者はどこですか？", "level": 1}
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "scene": "greetings",
+  "sceneName": "挨拶・自己紹介",
+  "phrases": [
+    {
+      "id": "g001",
+      "vietnamese": "Xin chào",
+      "pronunciation": "xin1 chao4",
+      "japanese": ["こんにちは", "はじめまして"],
+      "exampleVi": "Xin chào, tôi là Katsuhiro.",
+      "exampleJa": "こんにちは、私はカツヒロです。",
+      "level": 1
+    },
+    {
+      "id": "g002",
+      "vietnamese": "Cảm ơn",
+      "pronunciation": "kam3 on1",
+      "japanese": ["ありがとう"],
+      "exampleVi": "Cảm ơn bạn rất nhiều.",
+      "exampleJa": "どうもありがとうございます。",
+      "level": 1
+    },
+    {
+      "id": "g003",
+      "vietnamese": "Tạm biệt",
+      "pronunciation": "tam1 biet7",
+      "japanese": ["さようなら"],
+      "exampleVi": "Tạm biệt, bạn!",
+      "exampleJa": "さようなら、友達！",
+      "level": 1
+    },
+    {
+      "id": "g004",
+      "vietnamese": "Tên tôi là",
+      "pronunciation": "ten1 toi1 la6",
+      "japanese": ["私の名前は"],
+      "exampleVi": "Tên tôi là Katsuhiro.",
+      "exampleJa": "私の名前はカツヒロです。",
+      "level": 1
+    },
+    {
+      "id": "g005",
+      "vietnamese": "Bạn khỏe không?",
+      "pronunciation": "ban1 khoe3 khong1",
+      "japanese": ["お元気ですか？"],
+      "exampleVi": "Bạn khỏe không? - Mình khỏe, cảm ơn bạn.",
+      "exampleJa": "お元気ですか？ - 元気です、ありがとうございます。",
+      "level": 2
+    }
+  ]
+}

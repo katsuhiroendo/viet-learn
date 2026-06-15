@@ -1,0 +1,11 @@
+{
+  "scene": "numbers",
+  "sceneName": "数字・時間・日付",
+  "phrases": [
+    {"id": "n001", "vietnamese": "Một", "pronunciation": "mot1", "japanese": ["1", "一"], "exampleVi": "Có một cái bàn.", "exampleJa": "テーブルが1つあります。", "level": 1},
+    {"id": "n002", "vietnamese": "Hai", "pronunciation": "hai2", "japanese": ["2", "二"], "exampleVi": "Có hai cái ghế.", "exampleJa": "椅子が2つあります。", "level": 1},
+    {"id": "n003", "vietnamese": "Ba", "pronunciation": "ba1", "japanese": ["3", "三"], "exampleVi": "Ba người.", "exampleJa": "3人。", "level": 1},
+    {"id": "n004", "vietnamese": "Bốn", "pronunciation": "bon4", "japanese": ["4", "四"], "exampleVi": "Bốn chiếc.", "exampleJa": "4個。", "level": 1},
+    {"id": "n005", "vietnamese": "Năm", "pronunciation": "nam5", "japanese": ["5", "五"], "exampleVi": "Năm đồng xu.", "exampleJa": "5枚のコイン。", "level": 1}
+  ]
+}

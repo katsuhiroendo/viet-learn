@@ -1,0 +1,9 @@
+{
+  "scene": "housing",
+  "sceneName": "住居・アパート",
+  "phrases": [
+    {"id": "h001", "vietnamese": "Tìm nhà cho thuê.", "pronunciation": "tim3 nha6 cho2 thue1", "japanese": ["アパートを探しています。"], "exampleVi": "Tôi tìm nhà cho thuê.", "exampleJa": "私はアパートを探しています。", "level": 1},
+    {"id": "h002", "vietnamese": "Giá tiền là bao nhiêu?", "pronunciation": "gia3 tien1 la6 bao1 nhieu3", "japanese": ["家賃はいくらですか？"], "exampleVi": "Giá tiền nhà là bao nhiêu?", "exampleJa": "家賃はいくらですか？", "level": 1},
+    {"id": "h003", "vietnamese": "Có điều hòa không?", "pronunciation": "co3 dieu1 hoa6 khong1", "japanese": ["エアコンはありますか？"], "exampleVi": "Phòng này có điều hòa không?", "exampleJa": "この部屋にエアコンはありますか？", "level": 1}
+  ]
+}
