@@ -11,19 +11,19 @@ export default function AppShell({ children }: AppShellProps) {
 
   return (
     <div className="flex h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Sidebar */}
-      <div className="hidden md:flex md:flex-col md:w-64">
+      {/* Desktop Sidebar */}
+      <div className="hidden md:flex md:flex-col md:w-64 z-10">
         <Sidebar />
       </div>
 
       {/* Mobile Sidebar Overlay */}
       {sidebarOpen && (
         <div
-          className="fixed inset-0 z-40 bg-black bg-opacity-50 md:hidden"
+          className="fixed inset-0 z-40 bg-black bg-opacity-75 md:hidden"
           onClick={() => setSidebarOpen(false)}
         >
           <div
-            className="w-64 h-full bg-white dark:bg-gray-800 overflow-y-auto"
+            className="w-64 h-full bg-white dark:bg-gray-800 overflow-y-auto z-50"
             onClick={(e) => e.stopPropagation()}
           >
             <Sidebar />
