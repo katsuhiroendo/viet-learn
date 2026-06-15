@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import AppShell from './components/layout/AppShell';
 import Dashboard from './components/dashboard/Dashboard';
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <BrowserRouter basename="/viet-learn">
+      <HashRouter>
         <AppShell>
           <Routes>
             <Route path="/" element={<Dashboard />} />
@@ -32,7 +32,7 @@ function App() {
             <Route path="/settings" element={<Settings />} />
           </Routes>
         </AppShell>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
