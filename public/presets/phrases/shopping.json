@@ -1,0 +1,10 @@
+{
+  "scene": "shopping",
+  "sceneName": "買い物",
+  "phrases": [
+    {"id": "s001", "vietnamese": "Giá bao nhiêu?", "pronunciation": "gia3 bao1 nhieu3", "japanese": ["いくらですか？"], "exampleVi": "Cái áo này giá bao nhiêu?", "exampleJa": "このシャツいくらですか？", "level": 1},
+    {"id": "s002", "vietnamese": "Có kích cỡ nào khác không?", "pronunciation": "co3 kich3 co3 nao2 khac4 khong1", "japanese": ["他のサイズはありますか？"], "exampleVi": "Có kích cỡ L không?", "exampleJa": "Lサイズはありますか？", "level": 2},
+    {"id": "s003", "vietnamese": "Tôi muốn mua...", "pronunciation": "toi1 muon3 mua1", "japanese": ["私は...が欲しいです"], "exampleVi": "Tôi muốn mua nước cam.", "exampleJa": "私はオレンジジュースが欲しいです。", "level": 1},
+    {"id": "s004", "vietnamese": "Có bao nhiêu tiền?", "pronunciation": "co3 bao1 nhieu3 tien1", "japanese": ["いくらですか？"], "exampleVi": "Cây bút này có bao nhiêu tiền?", "exampleJa": "このペンはいくらですか？", "level": 1}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "scene": "transport",
+  "sceneName": "交通・移動",
+  "phrases": [
+    {"id": "t001", "vietnamese": "Tôi muốn đến...", "pronunciation": "toi1 muon3 den1", "japanese": ["私は...に行きたいです。"], "exampleVi": "Tôi muốn đến bãi biển.", "exampleJa": "私はビーチに行きたいです。", "level": 1},
+    {"id": "t002", "vietnamese": "Bao nhiêu tiền đến...?", "pronunciation": "bao1 nhieu3 tien1 den1", "japanese": ["...までいくらですか？"], "exampleVi": "Bao nhiêu tiền đến nhà ga?", "exampleJa": "駅までいくらですか？", "level": 1},
+    {"id": "t003", "vietnamese": "Xe buýt tới đâu?", "pronunciation": "xe1 buyt3 toi3 dau5", "japanese": ["バスはどこに行きますか？"], "exampleVi": "Xe buýt này tới đâu?", "exampleJa": "このバスはどこに行きますか？", "level": 2}
+  ]
+}

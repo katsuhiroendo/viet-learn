@@ -1,0 +1,9 @@
+{
+  "scene": "emergency",
+  "sceneName": "緊急時",
+  "phrases": [
+    {"id": "e001", "vietnamese": "Cứu tôi!", "pronunciation": "cuu3 toi1", "japanese": ["助けて！"], "exampleVi": "Cứu tôi!", "exampleJa": "助けて！", "level": 1},
+    {"id": "e002", "vietnamese": "Gọi cảnh sát!", "pronunciation": "goi3 canh3 sat3", "japanese": ["警察を呼んでください！"], "exampleVi": "Gọi cảnh sát!", "exampleJa": "警察を呼んでください！", "level": 1},
+    {"id": "e003", "vietnamese": "Gọi xe cứu thương!", "pronunciation": "goi3 xe1 cuu3 thuong1", "japanese": ["救急車を呼んでください！"], "exampleVi": "Gọi xe cứu thương!", "exampleJa": "救急車を呼んでください！", "level": 1}
+  ]
+}

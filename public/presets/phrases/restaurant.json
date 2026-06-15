@@ -1,0 +1,9 @@
+{
+  "scene": "restaurant",
+  "sceneName": "レストラン・飲食",
+  "phrases": [
+    {"id": "r001", "vietnamese": "Một bàn cho hai người.", "pronunciation": "mot1 ban3 cho2 hai2 nguoi1", "japanese": ["2名様のテーブルをお願いします。"], "exampleVi": "Một bàn cho hai người.", "exampleJa": "2名様のテーブルをお願いします。", "level": 1},
+    {"id": "r002", "vietnamese": "Tôi muốn... nước.", "pronunciation": "toi1 muon3 nuoc3", "japanese": ["私は...水が欲しいです。"], "exampleVi": "Tôi muốn nước lạnh.", "exampleJa": "私は冷たい水が欲しいです。", "level": 1},
+    {"id": "r003", "vietnamese": "Cơm bao nhiêu tiền?", "pronunciation": "com3 bao1 nhieu3 tien1", "japanese": ["ご飯いくらですか？"], "exampleVi": "Cơm bao nhiêu tiền?", "exampleJa": "ご飯いくらですか？", "level": 1}
+  ]
+}
