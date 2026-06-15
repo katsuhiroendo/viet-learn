@@ -1,60 +1,56 @@
 import { useState } from 'react';
 import Sidebar from './Sidebar';
 import BottomNav from './BottomNav';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 interface AppShellProps {
   children: React.ReactNode;
 }
 
+const MD_BREAKPOINT = 768;
+
 export default function AppShell({ children }: AppShellProps) {
+  const { width } = useWindowSize();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const isDesktop = width >= MD_BREAKPOINT;
 
   return (
-    <>
-      {/* Desktop Layout */}
-      <div className="hidden md:flex h-screen bg-gray-50 dark:bg-gray-900">
-        {/* Desktop Sidebar */}
-        <div className="w-64 flex-shrink-0 border-r border-gray-200 dark:border-gray-700">
+    <div className="flex h-screen w-full bg-gray-50 dark:bg-gray-900">
+      {/* Desktop Sidebar - Only render on desktop */}
+      {isDesktop && (
+        <div className="w-64 flex-shrink-0 border-r border-gray-200 dark:border-gray-700 overflow-y-auto">
           <Sidebar />
         </div>
+      )}
 
-        {/* Main Content */}
-        <div className="flex-1 flex flex-col overflow-hidden">
-          <main className="flex-1 overflow-y-auto">
-            <div className="p-6">
-              {children}
-            </div>
-          </main>
-        </div>
-      </div>
-
-      {/* Mobile Layout */}
-      <div className="flex flex-col h-screen md:hidden bg-gray-50 dark:bg-gray-900">
-        {/* Mobile Sidebar Overlay */}
-        {sidebarOpen && (
+      {/* Mobile Sidebar Modal - Only render on mobile when open */}
+      {!isDesktop && sidebarOpen && (
+        <div
+          className="fixed inset-0 z-40 bg-black bg-opacity-50"
+          onClick={() => setSidebarOpen(false)}
+        >
           <div
-            className="fixed inset-0 z-30 bg-black bg-opacity-50"
-            onClick={() => setSidebarOpen(false)}
+            className="w-64 h-full bg-white dark:bg-gray-800 overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
           >
-            <div
-              className="w-64 h-full bg-white dark:bg-gray-800 overflow-y-auto"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <Sidebar />
-            </div>
+            <Sidebar />
           </div>
-        )}
+        </div>
+      )}
 
-        {/* Main Content */}
-        <main className="flex-1 overflow-y-auto pb-16">
-          <div className="p-4">
+      {/* Main Content Area */}
+      <div className="flex-1 flex flex-col overflow-hidden">
+        <main className="flex-1 overflow-y-auto pb-16 md:pb-0">
+          <div className="p-4 md:p-6">
             {children}
           </div>
         </main>
 
-        {/* Bottom Navigation */}
-        <BottomNav onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
+        {/* Mobile Bottom Navigation - Only render on mobile */}
+        {!isDesktop && (
+          <BottomNav onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
+        )}
       </div>
-    </>
+    </div>
   );
 }
