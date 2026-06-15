@@ -14,13 +14,13 @@ export default function Sidebar() {
   const location = useLocation();
 
   return (
-    <div className="w-full h-full bg-white dark:bg-gray-800 shadow-lg">
+    <div className="w-full h-full flex flex-col bg-white dark:bg-gray-800 shadow-lg">
       <div className="p-6 border-b border-gray-200 dark:border-gray-700">
         <h1 className="text-2xl font-bold text-vietnamese">🇻🇳 VietLearn</h1>
         <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">ベトナム語学習</p>
       </div>
 
-      <nav className="mt-6">
+      <nav className="flex-1 mt-6 overflow-y-auto">
         {navItems.map(({ path, icon: Icon, label }) => {
           const isActive = location.pathname === path;
           return (
@@ -40,7 +40,7 @@ export default function Sidebar() {
         })}
       </nav>
 
-      <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-200 dark:border-gray-700">
+      <div className="flex-shrink-0 p-6 border-t border-gray-200 dark:border-gray-700">
         <div className="text-xs text-gray-500 dark:text-gray-400 text-center">
           <p>v1.0.0</p>
         </div>

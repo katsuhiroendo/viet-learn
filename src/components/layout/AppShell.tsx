@@ -53,9 +53,7 @@ export default function AppShell({ children }: AppShellProps) {
         </main>
 
         {/* Bottom Navigation */}
-        <div className="fixed bottom-0 left-0 right-0 z-40">
-          <BottomNav onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
-        </div>
+        <BottomNav onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
       </div>
     </>
   );
