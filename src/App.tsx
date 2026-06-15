@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <BrowserRouter>
+      <BrowserRouter basename="/viet-learn/">
         <AppShell>
           <Routes>
             <Route path="/" element={<Dashboard />} />
